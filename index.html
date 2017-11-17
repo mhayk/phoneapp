@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+
+	<title>Firmstep Test</title>
+
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2 filters-col">
+				<div class="filters">
+					<form>
+						<div class="filter-criteria">
+							<span>Manufacturer</span>
+							<label><input type="checkbox" value="Apple" name="manufacturer">Apple</label>
+							<label><input type="checkbox" value="Samsung" name="manufacturer">Samsung</label>
+							<label><input type="checkbox" value="HTC" name="manufacturer">HTC</label>
+							<label><input type="checkbox" value="Nokia" name="manufacturer">Nokia</label>
+							<label><input type="checkbox" value="ZTE" name="manufacturer">ZTE</label>
+							<label><input type="checkbox" value="Sony" name="manufacturer">Sony</label>
+						</div>
+						<div class="filter-criteria">
+							<span>Screen Size</span>
+							<label><input type="checkbox" value="16" name="storage">16 GB</label>
+							<label><input type="checkbox" value="32" name="storage">32 GB</label>
+						</div>
+						<div class="filter-criteria">
+							<span>OS</span>
+							<label><input type="checkbox" value="Android" name="os">Android</label>
+							<label><input type="checkbox" value="iOS" name="os">iOS</label>
+							<label><input type="checkbox" value="Windows" name="os">Windows</label>
+						</div>
+						<div class="filter-criteria">
+							<span>Camera</span>
+							<label><input type="checkbox" value="5" name="camera">5 Mpx</label>
+							<label><input type="checkbox" value="8" name="camera">8 Mpx</label>
+							<label><input type="checkbox" value="12" name="camera">12 Mpx</label>
+							<label><input type="checkbox" value="15" name="camera">15 Mpx</label>
+						</div>
+						<button id="btn">Clear filters</button>
+					</form>
+				</div>
+			</div>
+			<div id="notification"> </div>
+			<div class="col-md-10">
+				<ul class="products-list">
+					<!-- ITEM SNPPIET -->
+					<li>
+						<a href="#" class="product-photo">
+							<img src="http://fs-filestore-eu.s3.amazonaws.com/firmstep-test/images/iphone6.jpg" height="130" alt="Iphone 6">
+						</a>
+						<h2><a href="#"> Iphone 6 </a></h2>
+						<ul class="product-description">
+							<li><span>Manufacturer: </span>Apple</li>
+							<li><span>Storage: </span>16 GB</li>
+							<li><span>OS: </span>iOS</li>
+							<li><span>Camera: </span>8 Mpx</li>
+							<li><span>Description: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique ipsum in efficitur pharetra. Maecenas luctus ante in neque maximus, sed viverra sem posuere. Vestibulum lectus nisi, laoreet vel suscipit nec, feugiat at odio. Etiam eget tellus arcu.</li>
+						</ul>
+						<p class="product-price">£899</p>
+					</li>
+					<!-- END OF HTML SNIPPET -->
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
