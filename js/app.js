@@ -1,20 +1,19 @@
 $( ":checkbox" ).on( "click", function() {
 
-	var filter = new Filter();
 	$.each($("input[name='manufacturer']:checked"), function(){            
-		filter.filterManufacturer.push($(this).val());
+		myApp.filterManufacturer.push($(this).val());
 	});
 	$.each($("input[name='storage']:checked"), function(){            
-		filter.filterStorage.push(parseInt($(this).val()));
+		myApp.filterStorage.push(parseInt($(this).val()));
 	});
 	$.each($("input[name='os']:checked"), function(){            
-		filter.filterOs.push($(this).val());
+		myApp.filterOs.push($(this).val());
 	});
 	$.each($("input[name='camera']:checked"), function(){            
-		filter.filterCamera.push(parseInt($(this).val()));
+		myApp.filterCamera.push(parseInt($(this).val()));
 	});
 
-	filter.getJSON(filter.filterManufacturer, filter.filterStorage, filter.filterOs, filter.filterCamera);
+	myApp.getJSON(myApp.filterManufacturer, myApp.filterStorage, myApp.filterOs, myApp.filterCamera);
 });
 
 $('#btn').click(function(){
