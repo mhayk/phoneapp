@@ -1,5 +1,5 @@
 $( ":checkbox" ).on( "click", function() {
-
+	var myApp = new Filter();
 	$.each($("input[name='manufacturer']:checked"), function(){            
 		myApp.filterManufacturer.push($(this).val());
 	});
